@@ -1,4 +1,4 @@
-import "./chat.css";
+import "./Chat.css";
 import { useContext } from "react";
 import { MyContext } from "./MyContext";
 import ReactMarkdown from "react-markdown";
@@ -8,7 +8,7 @@ import "highlight.js/styles/github-dark.css";
 function Chat(){
     const {newChat,prevChats}=useContext(MyContext);
     return (
-        <>
+        <> 
         {newChat && <h1>Start a new chat!</h1>}
         <div className="chats">
             {
